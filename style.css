@@ -1,0 +1,120 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.head {
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+  width: 100%;
+  height: 100px;
+  padding-top: 25px;
+}
+
+.choices {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#rock,
+#paper,
+#scissor {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 100px;
+
+}
+
+#t {
+  position: relative;
+  top: 125px;
+  left: -170px;
+background-color: darkblue;
+  color:white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.score-board {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  font-size: 20px;
+  margin: 50px;
+
+}
+
+.score-board span:nth-child(1) {
+  margin-right: 500px;
+}
+
+.score-board span:nth-child(2) {
+  margin-left: 500px;
+}
+
+.score-board span {
+  border: 2px solid black;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 250px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color:white;
+  background-color: darkblue;
+  
+}
+
+.msg {
+
+  text-align: center;
+  font-size: 30px;
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 25%;
+  height: 100px;
+  padding-top: 20px;
+}
+
+#msg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  top: -300px;
+
+}
+
+/* ///effect */
+#rock,
+#paper,
+#scissor {
+  transition: all 0.5s ease-in-out;
+}
+
+#rock:hover {
+  scale: 1.1;
+
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+#paper:hover {
+  scale: 1.1;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+#scissor:hover {
+  scale: 1.1;
+  border-radius: 50%;
+  border: 2px solid black;
+}
