@@ -1,6 +1,8 @@
-html {
+html,body {
   height: 100%;
   width: 100%;
+/*overflow-x: hidden;*/
+
 }
 
 .head {
@@ -117,4 +119,51 @@ background-color: darkblue;
   scale: 1.1;
   border-radius: 50%;
   border: 2px solid black;
+}
+/* ////media */
+@media screen and (max-width:800px)
+{
+
+  .head {
+    letter-spacing: 5px;
+  }
+  .choices{
+    flex-direction: column;
+    
+    
+  }
+
+
+  #t{
+    top: -300px;
+  }
+
+  #rock,#paper,#scissor{
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 0px;
+    gap: 0px;
+  }
+  .score-board span{
+
+    margin: 10px;
+  }
+  .score-board span:nth-child(1) {
+    position: relative;
+    top:50px;
+    margin-right: 150px;
+  }
+
+  .score-board span:nth-child(2) {
+    position: relative;
+    top:50px;
+    margin-left: 150px;
+  }
+  .msg {
+
+    padding: 25px;
+    width: auto;
+    height: auto;
+    
+  }
 }

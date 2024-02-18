@@ -92,7 +92,7 @@ function decision() {
     if (userwin == true) {
       console.log("User wins");
 
-      msg.innerHTML = " you lose " + userChoice + " beats " + computerchoice;
+      msg.innerHTML = " you win " + userChoice + " beats " + computerchoice;
       userscore++;
       uscore.innerHTML = userscore;
       msg.style.backgroundColor = "green";
