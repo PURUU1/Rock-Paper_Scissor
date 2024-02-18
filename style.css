@@ -25,6 +25,7 @@ html,body {
 #rock,
 #paper,
 #scissor {
+  border-radius: 50%;
   width: 200px;
   height: 200px;
   margin-bottom: 100px;
@@ -99,27 +100,31 @@ background-color: darkblue;
 #rock,
 #paper,
 #scissor {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
 }
 
 #rock:hover {
+  box-shadow: 5px 5px 5px 2px #ff0aef;
+  
   scale: 1.1;
-
   border-radius: 50%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 #paper:hover {
+  box-shadow: 5px 5px 5px 2px #ffff00;
   scale: 1.1;
   border-radius: 50%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 #scissor:hover {
+  box-shadow: 5px 5px 5px 2px #00ffff;
   scale: 1.1;
   border-radius: 50%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
+
 /* ////media */
 @media screen and (max-width:800px)
 {

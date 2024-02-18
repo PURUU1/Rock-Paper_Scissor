@@ -110,10 +110,21 @@ function decision() {
       msg.style.backgroundColor = "red";
 
     }
-    if (userscore == 10 || compscore == 10) {
-      msg.innerHTML = "Match finished";
+    if (userscore >= 10 || compscore >= 10) {
       userscore = 0;
+      uscore.innerHTML = 0;
       compscore = 0;
+      cscore.innerHTML = 0;
+      msg.innerHTML = "Match finished";
+      msg.style.backgroundColor = "black";
+      msg.style.color = "white";
+     
+    }
+    if(userscore==0 && compscore==0)
+    {
+      msg.innerHTML = "Click To Start";
+      msg.style.backgroundColor = "black";
+      msg.style.color = "white";
     }
 
   }
